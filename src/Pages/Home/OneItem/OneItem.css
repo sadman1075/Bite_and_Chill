@@ -1,0 +1,6 @@
+.oneItem{
+   background:rgba(0,0,0,0.6) url("../../../assets/home/featured.jpg"); 
+   background-repeat: no-repeat;
+   background-position: center; 
+   background-blend-mode: darken;
+}
