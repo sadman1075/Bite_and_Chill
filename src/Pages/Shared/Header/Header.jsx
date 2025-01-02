@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const navOptions = <>
-        <li><a>Item 1</a></li>
-      
-        <li><a>Item 3</a></li>
+        <li><Link to={"/"}>Home</Link></li>
+        <li><Link to={"/menu"}>Our Menu</Link></li>
+
+
     </>
     return (
         <div>
@@ -28,9 +30,9 @@ const Header = () => {
                             tabIndex={0}
                             className="menu menu-sm dropdown-content bg-black bg-opacity-25 rounded-box z-[1] mt-3 w-52 p-2 shadow">
 
-                                {
-                                    navOptions
-                                }
+                            {
+                                navOptions
+                            }
 
                         </ul>
                     </div>
@@ -38,9 +40,9 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                      {
-                        navOptions
-                      }
+                        {
+                            navOptions
+                        }
                     </ul>
                 </div>
                 <div className="navbar-end">
